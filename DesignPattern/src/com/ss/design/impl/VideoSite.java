@@ -5,11 +5,12 @@ import java.util.ArrayList;
 import com.ss.design.inte.Observer;
 import com.ss.design.inte.Subject;
 
-//shipinwangzhanmouhu shixian Subject jiekou
+//视频网站 实现 Subject 接口
 public class VideoSite implements Subject {
 	
-	//guanchazheliebiao yiji gengxinledeshipinliebiao
+	//观察者列表 
 	private ArrayList<Observer> userList;
+	//更新了的视频列表
 	private ArrayList<String> videos;
 	
 	public VideoSite(){
@@ -22,10 +23,13 @@ public class VideoSite implements Subject {
 	}
 
 	public void removeObserver(Observer o) {
-		userList.remove(0);
+		userList.remove(o);
 	}
 
 	public void notifyAllObservers() {
+//		VideoSite v=new VideoSite();
+//		v.videos=videos;
+//		o.update(v);
 		for(Observer o:userList){
 			o.update(this);
 		}

@@ -1,6 +1,6 @@
 package com.ss.design.inte;
 
-//Subject zhutijiekou
+//Subject 主题接口
 public interface Subject {
 	
 	public void registerObserver(Observer o);

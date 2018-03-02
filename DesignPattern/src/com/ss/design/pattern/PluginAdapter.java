@@ -12,7 +12,7 @@ public class PluginAdapter implements CnPluginInterface {
 		this.enPlugin=enPlugin;
 	}
 
-	//重zai国际的充电方法wei英标方法
+	//适配器实现了英标的插头，重载国际的充电方法为英标方法
 	@Override
 	public void chargeWith2Pins() {
 		enPlugin.chargeWith3Pins();

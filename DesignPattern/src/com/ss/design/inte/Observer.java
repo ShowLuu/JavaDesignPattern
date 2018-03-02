@@ -1,6 +1,6 @@
 package com.ss.design.inte;
 
-//guanchazhejiekou
+//观察者接口
 public interface Observer {
 	
 	public void update(Subject s);

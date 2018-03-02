@@ -3,7 +3,7 @@ package com.ss.design.impl;
 import com.ss.design.inte.Observer;
 import com.ss.design.inte.Subject;
 
-//shixianguanchazhe,jikanshipindemeijumimen
+//实现观察者，即看视频的美剧迷们
 public class VideoFans implements Observer {
 
 	private String name;
@@ -14,7 +14,7 @@ public class VideoFans implements Observer {
 	
 	@Override
 	public void update(Subject s) {
-		System.out.println(this.name+", new videos are available! ");
+		System.out.println(name+", new videos are available! ");
 		//print video list
 		System.out.println(s);
 	}

@@ -4,7 +4,6 @@ import com.ss.design.impl.Apple;
 import com.ss.design.impl.Knife;
 import com.ss.design.inte.Food;
 import com.ss.design.inte.KitchenFactory;
-import com.ss.design.inte.TableWare;
 
 public class AkitchenAbstract implements KitchenFactory{
 
@@ -14,7 +13,7 @@ public class AkitchenAbstract implements KitchenFactory{
 	}
 
 	@Override
-	public TableWare getTableWare() {
+	public Knife getTableWare() {
 		return new Knife();
 	}
 
